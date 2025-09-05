@@ -29,3 +29,13 @@ Windows PowerShell scripts for quick diagnostics and health checks.
 - User says “Windows keeps asking to restart”
 - Updates failed or are stuck
 - Verifying that critical updates were installed
+
+## ⚡ Startup Apps Report
+- Script: `scripts/Startup-Apps-Report.ps1`
+- Lists programs that launch at boot/login from **Registry Run keys**, **Startup folders**, **Scheduled Tasks (Logon/Startup)**, and **Automatic services**. Attempts modern Startup Apps provider when available.
+- Output saved to `logs/startup_TIMESTAMP.txt`.
+
+**When to use**
+- Slow boot or login
+- Too many apps launching automatically
+- Investigating what re-enables itself after cleanup
