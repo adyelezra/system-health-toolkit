@@ -19,3 +19,13 @@ Windows PowerShell scripts for quick diagnostics and health checks.
 - Clicking/whirring HDD sounds
 - Frequent disk-related errors in Event Viewer
 - Before cloning/migrating OS to another drive
+
+## 🔄 Windows Update Status
+- Script: `scripts/Windows-Update-Status.ps1`
+- Shows **pending reboot** state, lists **recently installed updates**, surfaces **Windows Update errors** from the last 30 days, and performs a quick **available updates scan**.
+- Output saved to `logs/winupdate_TIMESTAMP.txt`.
+
+**When to use**
+- User says “Windows keeps asking to restart”
+- Updates failed or are stuck
+- Verifying that critical updates were installed
