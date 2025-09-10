@@ -1,4 +1,4 @@
-# 🛠️ System Health Toolkit (Windows)
+# 🛠️ IT Support Toolkit (Windows)
 
 PowerShell scripts for quick diagnostics and health checks on Windows systems.
 
