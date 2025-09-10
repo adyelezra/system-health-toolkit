@@ -39,3 +39,13 @@ Windows PowerShell scripts for quick diagnostics and health checks.
 - Slow boot or login
 - Too many apps launching automatically
 - Investigating what re-enables itself after cleanup
+
+## 🌐 Network Connectivity Report
+- Script: `scripts/Network-Connectivity-Report.ps1`
+- Checks network adapter status, IP configuration, connectivity (ping tests), and DNS resolution.
+- Output saved to `logs/network_TIMESTAMP.txt`.
+
+**When to use**
+- No internet or intermittent connectivity
+- DNS not resolving properly
+- Troubleshooting network configuration or connectivity issues
