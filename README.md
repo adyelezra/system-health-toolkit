@@ -37,6 +37,13 @@ PowerShell scripts for quick diagnostics and health checks on Windows systems.
 - Checks network adapters, IP configuration, connectivity, and DNS resolution.  
 - **Output:** `logs/network_TIMESTAMP.txt`
 
+
+## 🧑‍💻 User Onboarding & Asset Management Toolkit
+
+**Script:** ` scripts/User-Onboarding-Toolkit.ps1` 
+Simulates IT user onboarding and offboarding, including account creation, role assignment, and asset allocation.
+**Output:** ` logs/onboarding_TIMESTAMP.txt` 
+
 ---
 
 ## ⚡ How to Run
