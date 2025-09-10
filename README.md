@@ -40,9 +40,9 @@ PowerShell scripts for quick diagnostics and health checks on Windows systems.
 
 ## 🧑‍💻 User Onboarding & Asset Management Toolkit
 
-**Script:** ` scripts/User-Onboarding-Toolkit.ps1` 
-Simulates IT user onboarding and offboarding, including account creation, role assignment, and asset allocation.
-**Output:** ` logs/onboarding_TIMESTAMP.txt` 
+- **Script:** ` scripts/User-Onboarding-Toolkit.ps1` 
+- Simulates IT user onboarding and offboarding, including account creation, role assignment, and asset allocation.
+- **Output:** ` logs/onboarding_TIMESTAMP.txt` 
 
 ---
 
