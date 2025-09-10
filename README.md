@@ -2,50 +2,53 @@
 
 Windows PowerShell scripts for quick diagnostics and health checks.
 
+---
+
 ## 🖥️ System Health Report
 - Script: `scripts/System-Health-Report.ps1`
 - Collects OS version, uptime, CPU/RAM, disk usage, network adapters, IP configuration, and non-running services.
 - Output saved to `logs/sysreport_TIMESTAMP.txt`.
-- Use when investigating performance issues, post-update problems, or for baseline system inventory.
+- **Demo Screenshots:**  
+Logs: ![System Health Logs](screenshots/System-Health-Report - Logs.png)  
+PowerShell: ![System Health PowerShell](screenshots/System-Health-Report - Powershell.png)
+
+---
 
 ## 💾 Disk Health Check
 - Script: `scripts/Disk-Health-Check.ps1`
-- Uses `Get-PhysicalDisk` + `Get-StorageReliabilityCounter` when available, and falls back to WMI SMART status for older systems.
-- Reports: health status, size, media type (HDD/SSD), temperature, power-on hours, read/write errors, retries, and SMART predictive failure (if available).
+- Reports health, size, media type (HDD/SSD), temperature, power-on hours, read/write errors, retries, and predictive failure.
 - Output saved to `logs/diskhealth_TIMESTAMP.txt`.
+- **Demo Screenshots:**  
+Logs: ![Disk Health Logs](screenshots/Disk Health Check - Logs.png)  
+PowerShell: ![Disk Health PowerShell](screenshots/Disk Health Check - Powershell.png)
 
-**When to use**
-- System feels unstable or crashes during file operations
-- Clicking/whirring HDD sounds
-- Frequent disk-related errors in Event Viewer
-- Before cloning/migrating OS to another drive
+---
 
 ## 🔄 Windows Update Status
 - Script: `scripts/Windows-Update-Status.ps1`
-- Shows **pending reboot** state, lists **recently installed updates**, surfaces **Windows Update errors** from the last 30 days, and performs a quick **available updates scan**.
+- Shows pending reboot state, recently installed updates, surfaces Windows Update errors, and scans for available updates.
 - Output saved to `logs/winupdate_TIMESTAMP.txt`.
+- **Demo Screenshots:**  
+Logs: ![Windows Update Logs](screenshots/Windows Update Status - Logs.png)  
+PowerShell: ![Windows Update PowerShell](screenshots/Windows Update Status - Powershell.png)  
+Additional PowerShell view: ![Windows Update PowerShell 2](screenshots/Windows Update Status - Powershell 2.png)
 
-**When to use**
-- User says “Windows keeps asking to restart”
-- Updates failed or are stuck
-- Verifying that critical updates were installed
+---
 
 ## ⚡ Startup Apps Report
 - Script: `scripts/Startup-Apps-Report.ps1`
-- Lists programs that launch at boot/login from **Registry Run keys**, **Startup folders**, **Scheduled Tasks (Logon/Startup)**, and **Automatic services**. Attempts modern Startup Apps provider when available.
+- Lists programs that launch at boot/login from Registry Run keys, Startup folders, Scheduled Tasks, and Automatic services.
 - Output saved to `logs/startup_TIMESTAMP.txt`.
+- **Demo Screenshots:**  
+Logs: ![Startup Apps Logs](screenshots/Startup Apps Report - Logs.png)  
+PowerShell: ![Startup Apps PowerShell](screenshots/Startup Apps Report - Powershell.png)
 
-**When to use**
-- Slow boot or login
-- Too many apps launching automatically
-- Investigating what re-enables itself after cleanup
+---
 
 ## 🌐 Network Connectivity Report
 - Script: `scripts/Network-Connectivity-Report.ps1`
 - Checks network adapter status, IP configuration, connectivity (ping tests), and DNS resolution.
 - Output saved to `logs/network_TIMESTAMP.txt`.
-
-**When to use**
-- No internet or intermittent connectivity
-- DNS not resolving properly
-- Troubleshooting network configuration or connectivity issues
+- **Demo Screenshots:**  
+Logs: ![Network Logs](screenshots/network connectivity report - Logs.png)  
+PowerShell: ![Network PowerShell](screenshots/network connectivity report - Powershell.png)
